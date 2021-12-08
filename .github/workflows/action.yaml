@@ -117,7 +117,7 @@ jobs:
             aws lambda update-function-code \
               --function-name test-function-${{ matrix.input }} \
               --s3-bucket my-bucket-for-acg-github-actions-workflow \
-              --s3-key ${{ github.repository }}/${{ github.sha }}.zip \
+              --s3-key {{ github.sha }}.zip \
               --publish
 
   docs:
