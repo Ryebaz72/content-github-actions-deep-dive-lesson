@@ -13,9 +13,9 @@ def lambda_handler(event, context):
     if event["input"] == "Hello":
 
         return "World"
-    elif event["input"] == "Hello":
+    elif event["input"] == "Hi":
 
-        return "World"
+        return "Hi there"
 
     else:
 
